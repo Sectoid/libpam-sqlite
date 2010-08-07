@@ -177,11 +177,6 @@ AC_CHECK_LIB(sqlite, sqlite_open,
     [AC_MSG_ERROR(could not determine SQLite library location)])
 LDFLAGS="$old_LDFLAGS"
 
-if test "`uname`" = "Linux" >/dev/null 2>/dev/null; then
-    # Debian needs this
-    LIBS="$LIBS -lpam_misc"
-fi
-
 AC_MSG_CHECKING(for debug build)
 AC_ARG_ENABLE(debug, 
 [  --enable-debug            Enable debugging routines], 

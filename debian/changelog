@@ -1,4 +1,4 @@
-libpam-sqlite (0.3+gnoll1) stable; urgency=low
+libpam-sqlite (0.3+gnoll1) lenny; urgency=low
 
   * Initial build for Lenny
 

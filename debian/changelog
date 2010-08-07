@@ -1,0 +1,6 @@
+libpam-sqlite (0.3+gnoll1) stable; urgency=low
+
+  * Initial build for Lenny
+
+ -- Gleb Golubitsky <sectoid@gnolltech.org>  Sun, 08 Aug 2010 01:24:44 +0300
+

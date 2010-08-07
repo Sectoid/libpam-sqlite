@@ -1,0 +1,15 @@
+Source: libpam-sqlite
+Section: admin
+Priority: optional
+Maintainer: Gleb Golubitsky <sectoid@gnolltech.org>
+Build-Depends: debhelper (>= 7), autotools-dev, libsqlite3-dev
+Standards-Version: 3.8.0
+Homepage: http://packages.gnolltech.org
+
+Package: libpam-sqlite
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: PAM module for SQLite
+ This package provides a Plugable Authentifiaction Module that allows you
+ to authentificate users with a SQLite databased.
+

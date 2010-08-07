@@ -43,7 +43,7 @@ test: test.c
 	${CC} ${CFLAGS} -o $@ test.c ${LDLIBS}
 
 install:
-	@(ROOTDIR=${ROOTDIR}; ./install-module @host_os@)
+	@(export ROOTDIR=${DESTDIR}; ./install-module @host_os@)
 
 clean:
 	rm -f ${LIBOBJ} ${LIBLIB} core test *~ 

@@ -1,0 +1,19 @@
+#!/bin/sh
+# Install the .so into its appropriate location
+
+case "$1" in
+    freebsd*)
+    echo "FreeBSD: Installing pam_sqlite.so to /usr/lib"
+    destdir=usr/lib
+    ;;
+    linux*)
+    echo "Linux: Installing pam_sqlite.so to /lib/security"
+    destdir=lib/security
+    ;;
+    *)
+    echo "Unknown: Installing pam_sqlite.so to /lib/security"
+    destdir=lib/security
+    ;;
+esac
+
+install -c -m 644 -o root pam_sqlite.so $ROOTDIR/$destdir

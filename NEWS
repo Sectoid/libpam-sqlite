@@ -1,0 +1,15 @@
+2003-07-29 pam_sqlite v 0.3
+- Added new options which allow a separate configuration file
+  for each pam service to be used. (Wez)
+- Added sql templates for specifying which queries are executed
+  for checking accounts. (Wez)
+
+2003-07-09 pam_sqlite v 0.2
+
+- Code cleanup, memory handling streamlining. Use 
+  sqlite_mprintf() to esacape query strings and allocaste
+  memory insted of proriatory routine. (Edin)
+
+2003-06-25 pam_sqlite v 0.1
+
+- Initial release (port from pam_pgsql). (Edin)

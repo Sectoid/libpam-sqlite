@@ -1,3 +1,5 @@
 *~
 *.o
 *.so
+config.guess
+config.sub

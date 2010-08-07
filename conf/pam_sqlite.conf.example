@@ -1,0 +1,7 @@
+database = /etc/sysdb
+table = account
+user_column = user_name
+pwd_column = user_password
+expired_column = acc_expired
+newtok_column = acc_new_pwreq
+debug
